@@ -1,0 +1,18 @@
+<html>
+body, html {
+    cursor: url(https://www.freeiconspng.com/uploads/mac-cursor-6.png), pointer;
+}
+
+//(html)
+<img id="image" src="image.jpg"/>
+
+//(css)
+#image{
+position:absolute;
+} 
+
+//(js)
+$(document).mousemove(function(e){
+    $("#image").css({left:e.pageX, top:e.pageY});
+});
+</html>
